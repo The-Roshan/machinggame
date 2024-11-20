@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Memory Matching Game</h1>
+    <div id="controls">
+      <div>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div>
+        <label for="image-set">Image Set:</label>
+        <select id="image-set">
+          <option value="animals">Animals</option>
+          <option value="fruits">Fruits</option>
+          <option value="shapes">Shapes</option>
+        </select>
+      </div>
+      <button id="start-game">Start Game</button>
+      <button id="stop-game">Stop Game</button>
+    </div>
+    <div id="info-panel">
+      <div>Time: <span id="timer">00:00</span></div>
+      <div>Moves: <span id="moves">0</span></div>
+    </div>
+    <div id="game-board"></div>
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
